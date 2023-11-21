@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="searchbox">
+        <input id="inp" type="text" placeholder="search Google or type a url" />
+        <button class="sear" onclick="search()">search</button>
+      </div>
+      <div class="links">
+          <a  class="cards"
+            href="https://www.bing.com/ck/a?!&&p=4ef9d15973aacc9dJmltdHM9MTcwMDQzODQwMCZpZ3VpZD0xNjU2MTM2MC0yMzlkLTY5ZGYtMDVjNC0wMDBjMjI0MDY4MzUmaW5zaWQ9NTIxOA&ptn=3&ver=2&hsh=3&fclid=16561360-239d-69df-05c4-000c22406835&psq=geeks+for+geeks+.com&u=a1aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcv&ntb=1"
+            ><img src="geeksforgeeks.jpeg" alt="code red"
+          /></a>
+          <a class="cards"
+            href="https://www.bing.com/ck/a?!&&p=3393ef9d1b59b3d9JmltdHM9MTcwMDQzODQwMCZpZ3VpZD0xNjU2MTM2MC0yMzlkLTY5ZGYtMDVjNC0wMDBjMjI0MDY4MzUmaW5zaWQ9NTIxNA&ptn=3&ver=2&hsh=3&fclid=16561360-239d-69df-05c4-000c22406835&psq=javatpoint+.com&u=a1aHR0cHM6Ly93d3cuamF2YXRwb2ludC5jb20v&ntb=1"
+            ><img src="javatpoint.png" alt="code red"
+          /></a>
+
+          <a class="cards"
+            href="https://www.bing.com/ck/a?!&&p=1d8191cea11eb357JmltdHM9MTcwMDQzODQwMCZpZ3VpZD0xNjU2MTM2MC0yMzlkLTY5ZGYtMDVjNC0wMDBjMjI0MDY4MzUmaW5zaWQ9NTIyMg&ptn=3&ver=2&hsh=3&fclid=16561360-239d-69df-05c4-000c22406835&psq=npm+.com&u=a1aHR0cHM6Ly93d3cubnBtanMuY29tLw&ntb=1"
+            ><img src="npm.png" alt="code red"
+          /></a>
+ 
+          <a class="cards"
+            href="https://www.bing.com/ck/a?!&&p=81d84a96d441090cJmltdHM9MTcwMDQzODQwMCZpZ3VpZD0xNjU2MTM2MC0yMzlkLTY5ZGYtMDVjNC0wMDBjMjI0MDY4MzUmaW5zaWQ9NTIxMQ&ptn=3&ver=2&hsh=3&fclid=16561360-239d-69df-05c4-000c22406835&psq=w3schools&u=a1aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS8&ntb=1"
+            ><img src="w3school.jpeg" alt="code red"
+          /></a>
+      </div>
+    </div>
+  </body>
+  <script>
+    function search() {
+      let inp = document.getElementById("inp").value;
+      let link = "https://www.google.com/search?q=*";
+      let final = link.replace("*", inp);
+      window.open(final, "_self");
+    }
+  </script>
+</html>
